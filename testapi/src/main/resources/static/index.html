@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>规则引擎-预测预警-班次日历-测试demo</title>
+    <link href="./lib/bootstrap.min.css" rel="stylesheet">
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./cfg.js"></script>
+    <script src="./app.js"></script>
+
+</head>
+
+<body>
+<div class="container" style="min-width:900px;width: 90%; ">
+    <h1 style="text-align: center;">规则服务、预测预警、时间日历测试</h1>
+    <div style="width: 48%;float: left;">
+        <table class="table">
+            <caption>测试列表</caption>
+            <thead>
+            <tr>
+                <th>1、规则服务测试</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='RULE-0' class="btn btn-block btn-info"> 应用数据集合</bottom>
+                </td>
+                <td>
+                    <bottom id='RULE-1' class="btn btn-block btn-info"> 应用数据查询</bottom>
+                </td>
+                <td>
+                    <bottom id='RULE-2' class="btn btn-block btn-info"> 规则集合查询</bottom>
+                </td>
+            </tr>
+            </tbody>
+
+            <thead>
+            <tr>
+                <th>2、时间日历测试</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='CALENDAR-0' class="btn btn-block btn-warning"> 时间日历集合查询</bottom>
+                </td>
+                <td>
+                    <bottom id='CALENDAR-1' class="btn btn-block btn-warning"> 时间日历子集查询</bottom>
+                </td>
+                <td>
+                    <bottom id='CALENDAR-2' class="btn btn-block btn-warning"> 日历子集查询为空</bottom>
+                </td>
+            </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>
+                    3、视频服务测试
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='VIDEO-0' class="btn btn-block btn-success"> 得到所有摄像头访问地址</bottom>
+                </td>
+                <td>
+                    <bottom id='VIDEO-1' class="btn btn-block btn-success"> 得到采气厂净化厂摄像头</bottom>
+                </td>
+                <td>
+                    <bottom id='VIDEO-2' class="btn btn-block btn-success"> 得到基地摄像头</bottom>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <bottom id='VIDEO-3' class="btn btn-block btn-success"> 得到所有的老摄像头</bottom>
+                </td>
+                <td>
+                    <bottom id='VIDEO-4' class="btn btn-block btn-success"> 得到组织机构</bottom>
+                </td>
+                <td>
+                    <bottom id='VIDEO-5' class="btn btn-block btn-success"> 获取摄像头rtmp地址</bottom>
+                </td>
+            </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>
+                    4、组态服务测试
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='ZT-0' class="btn btn-block btn-info"> 获取所有组织机构</bottom>
+                </td>
+                <td>
+                    <bottom id='ZT-1' class="btn btn-block btn-info"> 获取所有集气站</bottom>
+                </td>
+                <td>
+                    <bottom id='ZT-2' class="btn btn-block btn-info"> 采气区</bottom>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <bottom id='ZT-3' class="btn btn-block btn-info"> 获取阀室</bottom>
+                </td>
+                <td>
+                    <bottom id='ZT-4' class="btn btn-block btn-info"> 井号</bottom>
+                </td>
+                <td>
+                    <bottom id='ZT-5' class="btn btn-block btn-info"> 配气站</bottom>
+                </td>
+            </tr>
+            </tbody>
+
+            <thead>
+            <tr>
+                <th>
+                    5、PHD实时数据服务测试
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='PHD-0' class="btn btn-block btn-warning"> 获取采气厂所有点位信息</bottom>
+                </td>
+                <td>
+                    <bottom id='PHD-1' class="btn btn-block btn-warning"> 获取采气厂点位信息</bottom>
+                </td>
+                <td>
+                    <bottom id='PHD-2' class="btn btn-block btn-warning"> 获取采气厂点位当前值</bottom>
+                </td>
+            </tr>
+            </tbody>
+
+            <thead>
+            <tr>
+                <th>
+                    6、统一用户服务测试
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='TYYH-0' class="btn btn-block btn-success"> 获取组织机构所有节点信息</bottom>
+                </td>
+                <td>
+                    <bottom id='TYYH-1' class="btn btn-block btn-success"> 获取组织机构的根节点</bottom>
+                </td>
+                <td>
+                    <bottom id='TYYH-2' class="btn btn-block btn-success"> 获取某组织机构的下级节点信息</bottom>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <bottom id='TYYH-3' class="btn btn-block btn-success"> 获取全部绩效人员的信息</bottom>
+                </td>
+            </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>7、预测预警测试</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <bottom id='WARNING-0' class="btn btn-block btn-info"> 应用查询</bottom>
+                </td>
+                <td>
+                    <bottom id='WARNING-1' class="btn btn-block btn-info"> 应用子集查询</bottom>
+                </td>
+                <td>
+                    <bottom id='WARNING-2' class="btn btn-block btn-info"> 子集代理编号查询</bottom>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="width: 48%;float: right;">
+        <br>
+        <br>
+
+        <label>请求地址：</label>
+        <bottom id='send' class="btn  btn-primary" style="float: right;"> 发送请求</bottom>
+        <div>
+        <textarea id='input' class="form-control" id="deblock_udid" name="deblock_udid" rows="3"
+                  style="min-width: 70%;resize: none;float: right;"></textarea>
+        </div>
+        <label>返回结果：</label>
+        <bottom id='clear' class="btn  btn-primary" style="float: right;"> 清除所有</bottom>
+        <textarea id='output' class="form-control" id="deblock_udid2" name="deblock_udid2" rows="16"
+                  style="min-width: 90%;resize: none;"></textarea>
+    </div>
+</div>
+
+</body>
+</html>
